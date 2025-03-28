@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About me</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/darkmode.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-portrait"></i> Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link lang-sv" href="index.html"><i class="fas fa-home"></i> Hem</a>
+                <a class="nav-link lang-en" href="index.html"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link lang-sv" href="about.html"><i class="fas fa-user"></i> Om mig</a>
+                <a class="nav-link lang-en" href="about.html"><i class="fas fa-user"></i> About me</a>
+              </li>
+              
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <section>
+      <div class="lang-sv">
+        <h1 class="text-center"><i class="fas fa-user"></i> Om Mig</h1>
+      </div>
+      <div class="lang-en">
+        <h1 class="text-center"><i class="fas fa-user"></i> About Me</h1>
+      </div>
+
+      <img src="images/aug.jpg" class="about-img mb-4 d-block mx-auto" alt="Om Mig Bild" />
+      <h3 class="text-center">August Dahlström</h3>
+      <div class="text-center mb-4">
+        <a href="https://github.com/A0G0ST" target="_blank" class="mr-3"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://se.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+
+      <div class="lang-en">
+        <p>Hi! My name is August, and I'm a front-end developer with a degree in web development. I have a strong passion for creating interactive, responsive, and user-friendly web experiences.</p>
+        <p>During my studies, I specialized in HTML, CSS, JavaScript, and modern front-end frameworks like React. I also studied back-end development, which has given me a broad understanding of the entire development process from database management and APIs to server logic and full-stack solutions.</p>
+        <p>My passion lies in building beautiful and functional web applications where design and performance go hand in hand. I always strive to write clean, scalable, and optimized code while staying up to date with the latest technologies in web development.</p>
+        <p>When I'm not coding, I enjoy gaming, good food and spending time with friends and family.</p>
+      </div>
+
+      <div class="lang-sv">
+        <p>Hej! Jag heter August och är front-end utvecklare med examen inom webbutveckling. Jag har ett stort intresse för att skapa interaktiva, responsiva och användarvänliga webbupplevelser.</p>
+        <p>Under mina studier har jag fördjupat mig i HTML, CSS, JavaScript och moderna ramverk som React. Jag har även studerat back-end, vilket gett mig en bred förståelse för hela utvecklingsprocessen från databashantering och API:er till serverlogik och fullstack-lösningar.</p>
+        <p>Min passion ligger i att bygga snygga och funktionella webbapplikationer där design och prestanda går hand i hand. Jag strävar alltid efter att skriva ren, skalbar och optimerad kod, samtidigt som jag håller mig uppdaterad med de senaste teknikerna inom webbutveckling.</p>
+        <p>När jag inte kodar gillar jag att spela, äta gott och umgås med vänner och familj.</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact-section text-center py-5">
+    <div class="lang-en">
+      <h2>Let's have a chat!</h2>
+    </div>
+    <div class="lang-sv">
+      <h2>Hör av dig!</h2>
+    </div>
+    <p class="contact-email"><a href="mailto:august@pocama.se">august@pocama.se</a></p>
+  </section>
+
+  <script src="js/langtoggle.js"></script>
+</body>
+</html>

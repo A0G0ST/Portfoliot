@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #3498db;
+    --spacing-unit: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar {
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+.container h1 {
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.container h1:hover {
+    color: var(--primary-color);
+}
+
+.card {
+    margin-bottom: var(--spacing-unit);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 300px; /* Gör alla bilder lika stora */
+    object-fit: cover; /* Förhindra distorsion */
+    width: 100%;
+}
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: var(--spacing-unit);
+}
+
+footer .fa {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .fa:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* Mellanrum mellan bild och text */
+    padding: 2rem;
+}
+
+.about-me img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Gör bilden rund */
+    object-fit: cover;
+}
+
+.about-me p {
+    max-width: 600px;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me img {
+        width: 120px;
+        height: 120px;
+    }
+}
+.card-title {
+    font-size: 1.5rem; /* Större font för projektnamnet */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.card-body p {
+    margin-bottom: 1rem; /* Extra space mellan element */
+}
+.tech-stack {
+    margin-bottom: 1.5rem;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Avstånd mellan knapparna */
+}
+.skills i {
+    color: inherit; /* Behåller den naturliga färgen */
+}
+.skills i.fa-html5 { color: #E34F26; }   /* HTML - Orange */
+.skills i.fa-css3-alt { color: #1572B6; } /* CSS - Blå */
+.skills i.fa-js { color: #F7DF1E; }       /* JavaScript - Gul */
+.skills i.fa-react { color: #61DAFB; }    /* React - Ljusblå */
+.skills i.fa-node-js { color: #68A063; }  /* Node.js - Grön */
+.skills i.fa-git-alt { color: #F1502F; }  /* Git - Röd */
+.skills i.fa-github { color: #ded4d4; }   /* GitHub - Svart */
+.skills i.fa-sass { color: #CC6699; }     /* Sass - Rosa */
+.skills i.fa-database { color: #4DB33D; } /* SQL - Grön */
+.skills i.fa-wordpress { color: #21759B; } /* WordPress - Blå */
+.skills i.fa-bootstrap { color: #7952B3; }/* Bootstrap-lila */
+.skills i.fa-code { color: #007ACC; } /* VS Code-blå */
+
+
+.highlight-primary {
+    color: #007bff; /* Blå färg, justera efter behov */
+    font-weight: bolder;
+    font-size: larger;
+}
+.about-me {
+    
+    padding-bottom: 7rem;
+    padding-top: 10rem;
+}
+.about-img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+.skills{
+    padding-bottom: 5rem;
+        
+}
+/* Stilar för projekt-sidor */
+.project-page {
+    padding-bottom: 5rem;
+}
+
+
+.project-main-img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.project-sub-img {
+    max-width: 100%;
+    height: 150px; /* Gör bilderna mindre */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-description {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+footer {
+    padding-top: 3rem;
+}
+.about-me img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.lang-en { 
+    display: none; 
+}
+.language-toggle-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+}
+
+/*pilen*/
+.arrow-svg-container {
+    position: absolute;
+    top: 50px;    /* Ändra dessa för att finjustera */
+    right: 17px;
+    width: 250px;
+    z-index: 10;
+    pointer-events: none;
+    
+  }
+  
+  .arrow-label-sv {
+    position: absolute;
+    top: 135px;     /* Change to english */
+    right: 160px;
+    transform: rotate(-10deg);
+    font-size: 1rem;
+    color: #007bff; /* Blå färg, justera efter behov */
+    font-weight: bolder;
+    font-size: larger;
+    z-index: 11;
+    pointer-events: none;
+    font-family: 'Kalam', cursive;
+  }
+  
+  .arrow-label-en {
+    position: absolute;
+    top: 135px;     /* ändra till svenska */
+    right: 160px;
+    transform: rotate(-10deg);
+    color: #007bff; /* Blå färg, justera efter behov */
+    font-weight: bolder;
+    font-size: larger;
+    z-index: 11;
+    pointer-events: none;
+    font-family: 'Kalam', cursive;
+  }
+  
+  

@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .navbar {
+        background-color: #1f1f1f;
+    }
+
+    .card {
+        background-color: #1f1f1f;
+        color: #ffffff;
+    }
+
+    footer {
+        background-color: #1f1f1f;
+    }
+
+    footer .fa {
+        color: #ffffff;
+    }
+}

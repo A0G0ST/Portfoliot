@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><i class="fas fa-portrait"></i> Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link lang-sv" href="index.html"><i class="fas fa-home"></i> Hem</a>
+                        <a class="nav-link lang-en" href="index.html"><i class="fas fa-home"></i> Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link lang-sv" href="about.html"><i class="fas fa-user"></i> Om mig</a>
+                        <a class="nav-link lang-en" href="about.html"><i class="fas fa-user"></i> About me</a>
+                      </li>
+                      
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="language-toggle-container">
+        <button id="langToggle" class="btn btn-outline-primary">EN</button>
+    </div>
+
+    <main>
+<!-- Ändra språk pil (separat container för pil och text) -->
+<div class="arrow-svg-container">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800"><g stroke-width="9" stroke="hsl(227, 71%, 57%)" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.6293203910498375,-0.7771459614569708,0.7771459614569708,0.6293203910498375,-170.58654100272327,459.1302281628533)"><path d="M234 229.427490234375Q344 626.427490234375 566 561.427490234375 " marker-end="url(#SvgjsMarker4402)"></path></g><defs><marker markerWidth="6.5" markerHeight="6.5" refX="3.25" refY="3.25" viewBox="0 0 6.5 6.5" orient="auto" id="SvgjsMarker4402"><polygon points="0,6.5 0,0 6.5,3.25" fill="hsl(227, 71%, 57%)"></polygon></marker></defs></svg>
+  </div>
+  
+  <div class="arrow-label-sv lang-sv">Change to English?</div>
+  <div class="arrow-label-en lang-en">Ändra till Svenska?</div>
+
+  
+        
+        <section class="about-me container mt-5 d-flex flex-column flex-md-row align-items-center">
+            <img src="images/aug.jpg" alt="Ditt namn" class="rounded-circle img-fluid about-img">
+            <div class="about-text ml-md-4 text-center text-md-left">
+                <div class="lang-sv">
+                    <h2>Hej, jag heter August!</h2>
+                    <p>Jag är en <span class="highlight-primary">Front-end</span> <span class="highlight-primary">Utvecklare</span> baserad i Malmö. Jag brinner för att skapa rena, tillgängliga och engagerande webblösningar. Jag arbetar med HTML, CSS, JavaScript och moderna ramverk som React.</p>
+                    <p>august@pocama.se</p>
+                </div>
+                <div class="lang-en">
+                    <h2>Hey, I am August!</h2>
+                    <p>I'm a <span class="highlight-primary">Front-end</span> <span class="highlight-primary">Developer</span> based in Malmö, Sweden. I'm passionate about clean, accessible, and engaging web experiences. My expertise lies in HTML, CSS, JavaScript, and modern frameworks like React.</p>
+                    <p>august@pocama.se</p>
+                </div>
+                <div class="social-links mt-3">
+                    <a href="https://github.com/A0G0ST" target="_blank" class="mr-3"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://se.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills container text-center mt-5">
+            <div class="lang-sv">
+                <h1>Verktyg & Tekniker</h1>
+            </div>
+            <div class="lang-en">
+                <h1>Tools & Technologies</h1>
+            </div>
+            <div class="row mt-4">
+                <!-- Skills ikoner här som tidigare -->
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-js fa-3x"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-react fa-3x"></i>
+                    <p>React</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-node-js fa-3x"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-git-alt fa-3x"></i>
+                    <p>Git</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-github fa-3x"></i>
+                    <p>GitHub</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-sass fa-3x"></i>
+                    <p>SASS</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fas fa-database fa-3x"></i>
+                    <p>SQL</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-wordpress fa-3x"></i>
+                    <p>WordPress</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fab fa-bootstrap fa-3x"></i>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <i class="fas fa-code fa-3x"></i>
+                    <p>VS Code</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="lang-sv">
+                <h1 class="text-center">Projekt</h1>
+            </div>
+            <div class="lang-en">
+                <h1 class="text-center">Projects</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/project1/project1img.jpg" class="card-img-top" alt="Projekt 1">
+                        <div class="card-body text-center">
+                            <div class="lang-sv">
+                                <h5 class="card-title">Projekt 1</h5>
+                                <p>Detta är en kort beskrivning av projektet på svenska.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h5 class="card-title">Project 1</h5>
+                                <p>This is a short description of the project in English.</p>
+                            </div>
+                            <p class="tech-stack"> <i class="fab fa-html5"></i> HTML | <i class="fab fa-css3-alt"></i> CSS | <i class="fab fa-js"></i> JavaScript</p>
+                            <div class="btn-container">
+                                <a href="project1.html" class="btn btn-primary lang-sv"><i class="fas fa-eye"></i> Visa</a>
+                                <a href="project1.html" class="btn btn-primary lang-en"><i class="fas fa-eye"></i> View</a>
+                                <a href="https://github.com/dittrepo" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/project2/project2img.jpg" class="card-img-top" alt="Projekt 2">
+                        <div class="card-body text-center">
+                            <div class="lang-sv">
+                                <h5 class="card-title">Projekt 2</h5>
+                                <p>Detta är en kort beskrivning av projektet på svenska.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h5 class="card-title">Project 2</h5>
+                                <p>This is a short description of the project in English.</p>
+                            </div>
+                            <p class="tech-stack"> <i class="fab fa-html5"></i> HTML | <i class="fab fa-css3-alt"></i> CSS | <i class="fab fa-js"></i> JavaScript</p>
+                            <div class="btn-container">
+                                <a href="project2.html" class="btn btn-primary lang-sv"><i class="fas fa-eye"></i> Visa</a>
+                                <a href="project2.html" class="btn btn-primary lang-en"><i class="fas fa-eye"></i> View</a>
+                                <a href="https://github.com/dittrepo" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/project3/project3img.jpg" class="card-img-top" alt="Projekt 3">
+                        <div class="card-body text-center">
+                            <div class="lang-sv">
+                                <h5 class="card-title">Projekt 3</h5>
+                                <p>Detta är en kort beskrivning av projektet på svenska.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h5 class="card-title">Project 3</h5>
+                                <p>This is a short description of the project in English.</p>
+                            </div>
+                            <p class="tech-stack"> <i class="fab fa-html5"></i> HTML | <i class="fab fa-css3-alt"></i> CSS | <i class="fab fa-js"></i> JavaScript</p>
+                            <div class="btn-container">
+                                <a href="project3.html" class="btn btn-primary lang-sv"><i class="fas fa-eye"></i> Visa</a>
+                                <a href="project3.html" class="btn btn-primary lang-en"><i class="fas fa-eye"></i> View</a>
+                                <a href="https://github.com/dittrepo" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/project4/project4img.jpg" class="card-img-top" alt="Projekt 4">
+                        <div class="card-body text-center">
+                            <div class="lang-sv">
+                                <h5 class="card-title">Projekt 4</h5>
+                                <p>Detta är en kort beskrivning av projektet på svenska.</p>
+                            </div>
+                            <div class="lang-en">
+                                <h5 class="card-title">Project 4</h5>
+                                <p>This is a short description of the project in English.</p>
+                            </div>
+                            <p class="tech-stack"> <i class="fab fa-html5"></i> HTML | <i class="fab fa-css3-alt"></i> CSS | <i class="fab fa-js"></i> JavaScript</p>
+                            <div class="btn-container">
+                                <a href="project4.html" class="btn btn-primary lang-sv"><i class="fas fa-eye"></i> Visa</a>
+                                <a href="project4.html" class="btn btn-primary lang-en"><i class="fas fa-eye"></i> View</a>
+                                <a href="https://github.com/dittrepo" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kopiera och anpassa för projekt 2–4 -->
+            </div>
+        </section>
+
+        <section class="contact-section text-center py-5">
+            <div class="lang-sv">
+                <h2>Hör gärna av dig!</h2>
+                <p class="contact-email"><a href="mailto:august@pocama.se">august@pocama.se</a></p>
+            </div>
+            <div class="lang-en">
+                <h2>Let's have a chat!</h2>
+                <p class="contact-email"><a href="mailto:august@pocama.se">august@pocama.se</a></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/langtoggle.js"></script>
+</body>
+</html>
