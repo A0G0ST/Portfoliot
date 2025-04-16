@@ -137,6 +137,20 @@ footer .fa:hover {
 .skills i.fa-wordpress { color: #21759B; } /* WordPress - Blå */
 .skills i.fa-bootstrap { color: #7952B3; }/* Bootstrap-lila */
 .skills i.fa-code { color: #007ACC; } /* VS Code-blå */
+.skills i.fa-php {
+    color: #777BB4; /* PHP-lila */
+  }
+
+.tech-stack i.fa-html5 { color: #E34F26; }
+.tech-stack i.fa-css3-alt { color: #1572B6; }
+.tech-stack i.fa-js { color: #F7DF1E; }
+.tech-stack i.fa-react { color: #61DAFB; }
+.tech-stack i.fa-node-js { color: #68A063; }
+.tech-stack i.fa-php { color: #777BB4; }
+.tech-stack i.fa-database { color: #4DB33D; }
+.tech-stack i.fa-bootstrap { color: #7952B3; }
+.tech-stack i.fa-sass { color: #CD6799; }
+
 
 
 .highlight-primary {
@@ -172,16 +186,26 @@ footer .fa:hover {
     display: block;
     margin: 0 auto;
     height: auto;
+    max-height: 600px; /* justera värdet efter vad som passar */
+    object-fit: contain;
 }
 
+
 .project-sub-img {
-    max-width: 100%;
-    height: 150px; /* Gör bilderna mindre */
+    aspect-ratio: 16 / 9;
+    width: 100%;
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    border-radius: 6px;
+  }
+  
+h1.project-description {
+    border-left: 4px solid #0d6efd;
+    text-align: left;
+    padding-left: 1rem;
+    
 }
-
 .project-description {
     margin-top: 2rem;
     font-size: 1.1rem;
@@ -243,6 +267,14 @@ footer {
     z-index: 11;
     pointer-events: none;
     font-family: 'Kalam', cursive;
+  }
+  
+  @media (max-width: 991.98px) {
+    .arrow-svg-container,
+    .arrow-label-sv,
+    .arrow-label-en {
+      display: none !important;
+    }
   }
   
   
